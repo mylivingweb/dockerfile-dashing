@@ -1,6 +1,6 @@
 FROM ruby:latest
 
-MAINTAINER Tim Birkett <tim.birkett@theladbiblegroup.com>
+MAINTAINER Matt Livingston  <mylivingweb@gmail.com>
 
 RUN echo "deb http://ftp.us.debian.org/debian wheezy-backports main" >> /etc/apt/sources.list
 RUN apt-get update && \
@@ -17,15 +17,15 @@ RUN mkdir /dashing && \
     ln -s /dashing/jobs /jobs && \
     ln -s /dashing/public /public && \
     ln -s /dashing/widgets /widgets && \
+    ln -s /dashing/assets /assets && \
     mkdir /dashing/config && \
     mv /dashing/config.ru /dashing/config/config.ru && \
     ln -s /dashing/config/config.ru /dashing/config.ru && \
     ln -s /dashing/config /config
 
-COPY dashing-cyclist/assets/javascripts/cycler.coffee /dashing/assets/javascripts/cycler.coffee
 COPY run.sh /
 
-VOLUME ["/dashboards", "/jobs", "/config", "/public", "/widgets"]
+VOLUME ["/dashboards", "/jobs", "/config", "/public", "/widgets", "/assets"]
 
 ENV PORT 3030
 EXPOSE $PORT
