@@ -73,3 +73,4 @@ Edit this file to change your API key, to add authentication and more.
 - [@rowanu](https://github.com/rowanu), [Hotness Widget](https://gist.github.com/rowanu/6246149).
 - [@munkius](https://github.com/munkius), [fork](https://gist.github.com/munkius/9209839) of Hotness Widget.
 - [@chelsea](https://github.com/chelsea), [Random Aww](https://gist.github.com/chelsea/5641535).
+- [@pysysops](https://github.com/pysysops), For the modified DockerFiles and general heavy lifting of it all.
