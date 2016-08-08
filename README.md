@@ -65,7 +65,7 @@ which depends on the instagram gem. Multiple gems and widgets can be supplied li
 ### Assets
 To mount your own assets directory, use container volume **/assets**:
 
-```docker run -d -e -v=/path/to/assets:/assets -p 8080:3040 mylivingweb/docker-dashing``
+```docker run -d -e -v=/path/to/assets:/assets -p 8080:3040 mylivingweb/docker-dashing```
 
 ### Public (favicon, 404)
 To provide custom 404 and favicon, use container volume **/public**.
