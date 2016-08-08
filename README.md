@@ -1,7 +1,7 @@
 # Notes
 Forked from [pysysops/docker-dashing](https://hub.docker.com/r/pysysops/docker-dashing/), added extra gems to be installed and allow mounting of /assets for dashing-contrib and changed default port to 3040. Everything else is identical to [pysysops/docker-dashing](https://hub.docker.com/r/pysysops/docker-dashing/).
 
-When running on a CentOS with selinux on (like everyone) apply the following permissions to your /dashing directory 
+When running on a CentOS with selinux on (like you should) apply the following permissions to your /dashing directory 
 
 ``` chcon -Rt svirt_sandbox_file_t dashing ```
 
